@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My custom Bulma website</title>
+    <link rel="stylesheet" href="css/mystyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar has-shadow is-fixed-top">
+      <!--navbar logo/brand-->
+
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img
+            src="./images/Untitled-1.png small.png"
+            alt="site logo"
+            style="max-height: 40px; padding-left: 20px; padding-top: 10px"
+          />
+        </a>
+
+        <!--Hamburger menu-->
+
+        <a class="navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+      <!--Navigation menu-->
+
+      <div class="navbar-menu" id="nav-links" style="padding-right: 30px">
+        <div class="navbar-end">
+          <a class="navbar-item">Home</a>
+          <a class="navbar-item">About Us</a>
+          <a class="navbar-item">Services</a>
+          <a class="navbar-item">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    <!-- bottom bar  -->
+    <nav
+      class="navbar is-link is-fixed-bottom is-hidden-desktop"
+      role="navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item is-expanded">
+          <i class="fa fa-user" style="margin-right: 5px"></i>
+          <p class="is-size-7">Account</p>
+        </a>
+        <a class="navbar-item is-expanded">
+          <i class="fa fa-list" style="margin-right: 5px"></i>
+          <p class="is-size-7">Tasks</p>
+        </a>
+        <a class="navbar-item is-expanded">
+          <i class="fa fa-flag" style="margin-right: 5px"></i>
+          <p class="is-size-7">Alerts</p>
+        </a>
+        <a class="navbar-item is-expanded">
+          <i class="fa fa-cog" style="margin-right: 5px"></i>
+          <p class="is-size-7">Settings</p>
+        </a>
+      </div>
+    </nav>
+
+    <!-- mobile-dropdown-navbar -->
+
+    <!-- sidebar -->
+
+    <div
+      class="columns is-hidden-touch"
+      style="
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 20px;
+
+        overflow-x: hidden;
+        padding-top: 20px;
+      "
+    >
+      <div class="column">
+        <aside class="menu">
+          <p class="menu-label">General</p>
+          <ul class="menu-list">
+            <li><a>Dashboard</a></li>
+            <li><a>Customers</a></li>
+          </ul>
+          <p class="menu-label">Administration</p>
+          <ul class="menu-list">
+            <li><a>Team Settings</a></li>
+            <li>
+              <a class="is-active">Manage Your Team</a>
+              <ul>
+                <li><a>Members</a></li>
+                <li><a>Plugins</a></li>
+                <li><a>Add a member</a></li>
+              </ul>
+            </li>
+            <li><a>Invitations</a></li>
+            <li><a>Cloud Storage Environment Settings</a></li>
+            <li><a>Authentication</a></li>
+          </ul>
+          <p class="menu-label">Transactions</p>
+          <ul class="menu-list">
+            <li><a>Payments</a></li>
+            <li><a>Transfers</a></li>
+            <li><a>Balance</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    <!-- desktop hero -->
+
+    <!-- hero  -->
+    <section class="is-hidden-mobile" style="margin-left: 20%">
+      <section class="section mt-6">
+        <div class="container">
+          <div class="column"></div>
+          <h1 class="title">What is Coading?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+            deserunt! Eligendi, voluptates consequatur distinctio ipsam illo eos
+            eaque libero ullam quaerat officiis aliquid ipsum earum corrupti
+            dicta magni dolorem, magnam sed itaque quo recusandae blanditiis
+            modi optio aut? A ratione vero quam velit impedit excepturi
+            repellendus inventore repudiandae recusandae eos.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci
+          itaque totam numquam impedit quisquam voluptatibus nam placeat
+          corporis omnis, deserunt, illo illum temporibus, accusantium culpa
+          minus ipsa consequuntur blanditiis. Cum earum similique perspiciatis
+          aliquid autem quis, iste repellat pariatur dolor aliquam iure. Animi
+          facere accusantium dignissimos aut iure dolorem dolorum quae
+          praesentium eos voluptatum temporibus dolor nemo minus, magnam, error
+          quibusdam aspernatur laudantium. Sequi, repudiandae corrupti aliquam
+          veritatis recusandae repellendus enim magnam alias at maiores.
+          Deleniti delectus hic cum alias quidem illum magnam est dolorum
+          corporis officiis autem, repellat consequuntur dignissimos esse quasi
+          voluptate numquam laborum repudiandae architecto? Asperiores.
+        </p>
+      </section>
+
+      <section class="section" style="max-width: 80%; margin: 0 auto">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input
+              class="input is-success"
+              type="text"
+              placeholder="Text input"
+              value="bulma"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <p class="help is-success">This username is available</p>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input
+              class="input is-danger"
+              type="email"
+              placeholder="Email input"
+              value="hello@"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
+
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" />
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question" />
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="question" />
+              No
+            </label>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer is-fixed-bottom" style="background-color: black">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by
+            <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
+            licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            The website content is licensed
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+              >CC BY NC SA 4.0</a
+            >.
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- mobile hero -->
+
+    <section class="is-hidden-desktop">
+      <section class="section mt-6">
+        <div class="container">
+          <h1 class="title">What is Coading?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+            deserunt! Eligendi, voluptates consequatur distinctio ipsam illo eos
+            eaque libero ullam quaerat officiis aliquid ipsum earum corrupti
+            dicta magni dolorem, magnam sed itaque quo recusandae blanditiis
+            modi optio aut? A ratione vero quam velit impedit excepturi
+            repellendus inventore repudiandae recusandae eos.
+          </p>
+        </div>
+      </section>
+
+      <!-- comment box mobile -->
+
+      <section class="section" style="max-width: 80%; margin: 0 auto">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left has-icons-right">
+            <input
+              class="input is-success"
+              type="text"
+              placeholder="Text input"
+              value="bulma"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+          <p class="help is-success">This username is available</p>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input
+              class="input is-danger"
+              type="email"
+              placeholder="Email input"
+              value="hello@"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
+
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Select dropdown</option>
+                <option>With options</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox" />
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question" />
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="question" />
+              No
+            </label>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer is-fixed-bottom" style="background-color: black">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by
+            <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
+            licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            The website content is licensed
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+              >CC BY NC SA 4.0</a
+            >.
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- footer -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
